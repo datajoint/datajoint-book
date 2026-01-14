@@ -1,10 +1,74 @@
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Build and Deploy](https://github.com/dimitri-yatsenko/datajoint-book/actions/workflows/main.yml/badge.svg)](https://github.com/dimitri-yatsenko/datajoint-book/actions/workflows/main.yml)
+# ⚠️ Repository Archived
 
+> **This repository has been archived and is no longer maintained.**
+>
+> **Content has moved to the unified DataJoint documentation:**
+>
+> 🔗 **https://docs.datajoint.com**
 
-# License
+---
 
-© DataJoint Inc., 2024-2025, All rights reserved.
+## Where to Find Content
+
+All content from the DataJoint Book has been integrated into the unified documentation for DataJoint 2.0+:
+
+| Book Content | New Location |
+|--------------|--------------|
+| **Concepts & Theory** | [Explanation](https://docs.datajoint.com/explanation/) |
+| Relational Workflow Model | [Relational Workflow Model](https://docs.datajoint.com/explanation/relational-workflow-model/) |
+| Data Pipelines | [Data Pipelines](https://docs.datajoint.com/explanation/data-pipelines/) |
+| Data Model | [Data Model](https://docs.datajoint.com/explanation/#data-model) |
+| Query Algebra | [Query Algebra](https://docs.datajoint.com/explanation/query-algebra/) |
+| Type System | [Type System](https://docs.datajoint.com/explanation/type-system/) |
+| **Hands-On Learning** | [Tutorials](https://docs.datajoint.com/tutorials/) |
+| Getting Started | [First Pipeline](https://docs.datajoint.com/tutorials/basics/01-first-pipeline/) |
+| **Practical Guides** | [How-To Guides](https://docs.datajoint.com/how-to/) |
+| **API Reference** | [Reference](https://docs.datajoint.com/reference/) |
+
+## New Documentation Structure
+
+The DataJoint documentation now follows the [Diátaxis](https://diataxis.fr/) framework, providing better organization:
+
+- **[Explanation](https://docs.datajoint.com/explanation/)** — Conceptual understanding (replaces Book theory sections)
+- **[Tutorials](https://docs.datajoint.com/tutorials/)** — Learn by building (replaces Book examples)
+- **[How-To Guides](https://docs.datajoint.com/how-to/)** — Task-oriented guides
+- **[Reference](https://docs.datajoint.com/reference/)** — API and specifications
+
+## What's Improved
+
+✅ **Updated for DataJoint 2.0** — All content reflects the latest features and APIs
+✅ **Executable notebooks** — Interactive Jupyter notebooks with runnable code
+✅ **Better organization** — Diátaxis framework for clearer navigation
+✅ **Expanded content** — More domain-specific examples and use cases
+✅ **Search functionality** — Full-text search across all documentation
+✅ **Version indicators** — Clear markers for feature versions
+
+## Getting Started
+
+1. **Learn concepts:** Visit [Explanation](https://docs.datajoint.com/explanation/)
+2. **Build pipelines:** Try [Tutorials](https://docs.datajoint.com/tutorials/)
+3. **Solve problems:** Check [How-To Guides](https://docs.datajoint.com/how-to/)
+4. **Look up details:** Use [Reference](https://docs.datajoint.com/reference/)
+
+## Migration to DataJoint 2.0
+
+If you're using DataJoint 0.14.x or earlier:
+
+📖 See the [Migration Guide](https://docs.datajoint.com/how-to/migrate-to-v20/)
+
+For pre-2.0 documentation, visit [datajoint.github.io/datajoint-python](https://datajoint.github.io/datajoint-python).
+
+## Contributing
+
+Contributions now go through the unified documentation repository:
+
+- **Documentation:** [github.com/datajoint/datajoint-docs](https://github.com/datajoint/datajoint-docs)
+- **Contributing Guide:** [docs.datajoint.com/about/contributing](https://docs.datajoint.com/about/contributing/)
+- **Discussion:** [GitHub Discussions](https://github.com/datajoint/datajoint-python/discussions)
+
+## License
+
+© DataJoint Inc., 2024-2026, All rights reserved.
 
 This work is licensed under the [CC BY 4.0 License](LICENSE.md).
 You may:
@@ -14,99 +78,14 @@ You may:
 Provided that you:
 * give appropriate credit and indicate if changes were made
 
+## Support
 
-# DataJoint Book
+- **Documentation:** https://docs.datajoint.com
+- **Community:** [GitHub Discussions](https://github.com/datajoint/datajoint-python/discussions)
+- **Issues:** [datajoint-docs issues](https://github.com/datajoint/datajoint-docs/issues)
+- **Email:** support@datajoint.com
 
-Welcome to the [DataJoint Book](https://dimitri-yatsenko.github.io/datajoint-book), a comprehensive
-introduction to relational database programming in the context of scientific computing and data science.
+---
 
-This book is built as an **executable book**, following the principles of the [Executable Books Project](https://executablebooks.org/en/latest/), an international collaboration to build open source tools that facilitate publishing computational narratives using the Jupyter ecosystem.
-
-The book is authored using [MyST Markdown](https://mystmd.org/) (Markedly Structured Text), an extensible, semantic, and community-driven flavor of markdown designed for scientific and computational narratives. MyST enables us to:
-
-- Write rich, publication-quality content with enhanced markdown syntax
-- Embed executable code cells and computational outputs directly in the documentation
-- Generate interactive web pages and other output formats from the same source
-- Maintain a single source of truth for documentation, examples, and executable content
-
-This approach ensures that all code examples in the book are tested, up-to-date, and can be run directly by readers, bridging the gap between documentation and hands-on learning.
-
-## Running the Book with Dev Containers
-
-This repository includes a **Dev Container** (Development Container) configuration that provides a pre-configured development environment with all necessary dependencies, tools, and extensions already set up. This eliminates the need to manually install Python, DataJoint, MyST, and other required packages on your local machine.
-
-### What is a Dev Container?
-
-A Dev Container is a Docker-based development environment that runs inside a container but integrates seamlessly with your code editor (like Visual Studio Code or GitHub Codespaces). It ensures that everyone working on the book has an identical, reproducible environment, regardless of their operating system or local setup.
-
-### How to Use the Dev Container
-
-**Option 1: Using Visual Studio Code (Local)**
-
-1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop) on your machine
-2. Install [Visual Studio Code](https://code.visualstudio.com/)
-3. Install the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) in VS Code
-4. Clone this repository and open it in VS Code
-5. When prompted, click "Reopen in Container" (or use Command Palette: `Dev Containers: Reopen in Container`)
-6. VS Code will build the container and reload the workspace inside it
-
-**Option 2: Using GitHub Codespaces (Cloud)**
-
-1. Navigate to this repository on GitHub
-2. Click the green "Code" button
-3. Select the "Codespaces" tab
-4. Click "Create codespace on main"
-5. GitHub will launch a cloud-based VS Code environment with the Dev Container already running
-
-Once inside the Dev Container, you have access to all tools needed to build, edit, and execute the book's content, including Jupyter notebooks, Python with DataJoint, and MyST build tools.
-
-
-# Building and Deployment
-
-Once you're working inside the Dev Container (see above), you can build and preview the book locally.
-
-### Building the Book
-
-The MyST static site deployment instructions are provided here: https://mystmd.org/guide/deployment
-
-To build and serve the book locally:
-
-```shell
-$ cd book
-$ myst build --html
-$ npx serve _build/html
-```
-
-This will:
-1. Build the static HTML site from the MyST markdown and Jupyter notebook sources
-2. Start a local web server (typically at `http://localhost:3000`)
-3. Allow you to preview the book in your browser exactly as it will appear when deployed
-
-### Automatic Deployment
-
-The book is **automatically published** to [https://dimitri-yatsenko.github.io/datajoint-book](https://dimitri-yatsenko.github.io/datajoint-book) using GitHub Actions. 
-
-Every time changes are pushed to the `main` branch, a GitHub Actions workflow:
-1. Builds the book using MyST
-2. Deploys the generated HTML to GitHub Pages
-3. Makes the updated book immediately available online
-
-You can monitor the build and deployment status via the badge at the top of this README or by viewing the [Actions tab](https://github.com/datajoint/datajoint-book/actions) in the repository. This automated CI/CD pipeline ensures that the published version always reflects the latest content in the repository.
-
-### Manual Workflow Execution
-
-You can also manually trigger the "Build and Deploy DataJoint Book" workflow from the GitHub Actions interface:
-
-1. Navigate to the [Actions tab](https://github.com/datajoint/datajoint-book/actions) in the repository
-2. Select the "Build and Deploy DataJoint Book" workflow from the left sidebar
-3. Click the "Run workflow" button (on the right side)
-4. Select the branch you want to run the workflow on (typically `main`)
-5. Click "Run workflow" to start the build and deployment process
-
-This is useful when you want to rebuild and redeploy the book without making a new commit, or when testing workflow changes on a feature branch.
-
-# Contributions 
-We welcome and appreciate your contributions to this book, whether as a reviewer or as a contributor.
-All contributions will be gratefully acknowledged.
-You may suggest modifications by submitting an issue in the main [GitHub repository](https://github.com/dimitri-yatsenko/datajoint-book) for this book.
-For more substrantial contributions and collaborations, including co-authorship and publications, please contact Dimitri Yatsenko.
+**Last Updated:** January 2026
+**Archive Date:** January 2026
